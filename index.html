@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Design</title>
@@ -16,7 +17,8 @@
     <section>
         <div class="header">
             <h2 class="logo">Your Logo</h2>
-            <ul class="list">
+            <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+            <ul class="list" id="navigation">
                 <li>
                     <a href="#" class="active">Home</a>
                 </li>
@@ -35,6 +37,7 @@
                 <li>
                     <a href="#">Contact</a>
                 </li>
+                <i class="fa fa-times x2" onclick="menuToggle()"></i>
             </ul>
         </div>
         <div class="bannerText">
@@ -46,15 +49,22 @@
             <a class="read-more" href="#">Read More</a>
         </div>
         <img src="./images/bulb.jpg" class="bulb">
-        <!-- <ul class="sci">
+        <ul class="sci">
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>  SOCIAL MEDIA TAGS WONT APPEAR -->
+        </ul>
         <div class="element1"></div>
         <div class="element2"></div>
     </section>
+    <script src="https://kit.fontawesome.com/1f251ad47b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function menuToggle() {
+            var element = document.getElementById("navigation");
+            element.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
