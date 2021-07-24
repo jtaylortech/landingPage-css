@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-
+   
 .open {
     position: fixed;
     top: 0;
@@ -379,6 +379,7 @@ a.read-more {
         right: 20px;
     }
 }
+
 
 @media (max-width: 991px) {
     .fa-bars.x2 {
